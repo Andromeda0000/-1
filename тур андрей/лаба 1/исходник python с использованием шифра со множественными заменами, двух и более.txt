@@ -1,0 +1,37 @@
+a = list('abcdefghijklmnopqrstuvwxyz')
+b = list('uvwxyabzpqrjsteghfcklmdino')
+c = list('cklmdinostuvwxyzpqrjabeghf')
+d = list(input())
+e = []
+f = []
+j = []
+
+k = []
+l = []
+m = []
+
+i = 0
+while i<len(d):
+    x = a.index(d[i])
+    e.append(x)
+    f.append(b[x])
+    g = b.index(f[i])
+    j.append(c[g+5])
+    i+=1
+print(f)
+print(j)
+
+#Дешифровка
+i = 0
+while i<len(d):
+
+    x = c.index(j[i])
+    k.append(b[x-5])
+
+    l.append(a[x-5])
+
+    i+=1
+
+print(k)
+print(l)
+

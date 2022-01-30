@@ -1,0 +1,100 @@
+ah = []
+bh = []
+seq = list(input('write a text'))
+qwr = list(input('write a key'))
+x = int()
+itex = len(seq)
+wstg = len(qwr)
+qqq = []
+txt = str()
+k = int()
+#множаем ключ на разницу в количе6стве +1, так как целочисленное деление округляет в минус
+if itex>wstg:
+    itex =  (itex // wstg)+1
+qwr *= itex
+
+while len(qwr)>len(seq):
+    qwr.pop(-1)
+print(len(qwr), len(seq))
+
+
+x = len(qwr)
+i = int()
+z = int()
+while i < x:
+
+    if qwr[i] == 'a':
+        z = 0        
+    elif qwr[i] == 'b':
+        z = 1
+    elif qwr[i] == 'c':
+        z = 2
+    elif qwr[i] == 'd':
+        z = 3
+    elif qwr[i] == 'e':
+        z = 4
+    elif qwr[i] == 'f':
+        z = 5
+    elif qwr[i] == 'g':
+        z = 6
+    elif qwr[i] == 'h':
+        z = 7
+    elif qwr[i] == 'i':
+        z = 8
+    elif qwr[i] == 'j':
+        z = 9
+    elif qwr[i] == 'k':
+        z = 10
+    elif qwr[i] == 'l':
+        z = 11
+    elif qwr[i] == 'm':
+        z = 12
+    elif qwr[i] == 'n':
+        z = 13
+    elif qwr[i] == 'o':
+        z = 14
+    elif qwr[i] == 'p':
+        z = 15
+    elif qwr[i] == 'q':
+        z = 16
+    elif qwr[i] == 'r':
+        z = 17
+    elif qwr[i] == 's':
+        z = 18
+    elif qwr[i] == 't':
+        z = 19
+    elif qwr[i] == 'u':
+        z = 20
+    elif qwr[i] == 'v':
+        z = 21
+    elif qwr[i] == 'w':
+        z = 22
+    elif qwr[i] == 'x':
+        z = 23
+    elif qwr[i] == 'y':
+        z = 24
+    elif qwr[i] == 'z':
+        z = 25
+
+
+
+    qqq.append(z)
+    z = 0
+    i+=1
+i = 0
+while i < len(seq):
+    b = ord(seq[i])+qqq[i]
+
+    if b>122:
+        x = 96 + b - 122
+        b = x
+        
+
+
+    txt +=(chr(b))
+
+    
+    i+=1
+
+print(txt)
+

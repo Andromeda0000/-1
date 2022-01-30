@@ -1,0 +1,75 @@
+# key 8x8
+a = list(input())
+vvv = len(a)
+b = []
+c = []
+d = []
+e = []
+i = int()
+
+
+while len(a)<64:
+    a.append(' ')
+
+while i<8:
+    b.append(a[i])
+    b.append(a[i+8])
+    b.append(a[i+16])
+    b.append(a[i+24])
+    b.append(a[i+32])
+    b.append(a[i+40])
+    b.append(a[i+48])
+    b.append(a[i+56])
+
+    
+    i+=1
+
+print(b)
+
+print()
+print()
+print()
+
+# key = 10x10
+while len(b)<100:
+    b.append(' ')
+
+i = int()
+while i<10:
+    c.append(b[i])
+    c.append(b[i+10])
+    c.append(b[i+20])
+    c.append(b[i+30])
+    c.append(b[i+40])
+    c.append(b[i+50])
+    c.append(b[i+60])
+    c.append(b[i+70])
+    c.append(b[i+80])
+    c.append(b[i+90])
+    i+=1
+    
+print(c)
+
+
+#дешифр
+
+
+i = int()
+while i<10:
+    d.append(c[i])
+    d.append(c[i+10])
+    d.append(c[i+20])
+    d.append(c[i+30])
+    d.append(c[i+40])
+    d.append(c[i+50])
+    d.append(c[i+60])
+    d.append(c[i+70])
+    d.append(c[i+80])
+    d.append(c[i+90])
+    i+=1
+
+    
+
+print(d)
+
+

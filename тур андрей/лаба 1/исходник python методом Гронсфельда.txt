@@ -1,0 +1,30 @@
+# методом  Гронсфельда.
+
+#declare variables
+sh = []
+sh2 = []
+txt = str()
+txt2 = str()
+seq = list(input('write a text'))
+
+#enumerate возвращает кортеж от элемента старта и до конца списка
+#таким образом мы разбиваем текст на символы
+#ord переводит символы в текст юникода, а они записываются в список изменяясь на 3
+for i, val in enumerate(seq, start=1):
+    sh.append(ord(val)+3)
+#через chr переводим юникод в символы, получая шифр
+for i, val in enumerate(sh, start=1):
+    b = chr(val)
+    txt += b
+print('шифр ',txt)
+
+#дешифруем также, но при этом номер символа юникода понижаем до исходного значения
+
+for i, val in enumerate(txt, start=1):
+    sh2.append(ord(val)-3)
+
+
+for i, val in enumerate(sh2, start=1):
+    c = chr(val)
+    txt2 += c
+print('шифр ',txt2)

@@ -1,0 +1,15 @@
+#ключ и побитка
+
+a = input('символ')
+b = input('key')
+c = int((ord(a)))
+d = int((ord(b)))
+e = (c^d)
+print(chr(e+100))
+
+
+#Дешифр
+
+f = (e^d)
+print(chr(f))
+

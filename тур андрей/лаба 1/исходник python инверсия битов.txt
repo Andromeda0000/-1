@@ -1,0 +1,56 @@
+#инверсия битов исходного знака
+
+a = list(input())
+b = []
+d = []
+n = []
+txt = str()
+txt2 = str()
+
+for i, x in enumerate(a, start=0):
+    b.append(bin(ord(a[i])))
+    print(b[i])
+
+
+for i, x in enumerate(b, start=0):
+    c = list(b[i])
+del(c[0])
+del(c[0])
+print(c)
+
+v = len(c)
+z = int(0)
+while z < v:
+    if c[z] == '1':
+        d.append('0')
+        txt+='0'
+    else:
+        d.append('1')
+        txt+='1'
+
+    z+=1    
+
+print(txt)
+print(int(txt,2))
+
+#дешифровка
+
+
+
+gg = int()
+while gg<v:
+    if d[gg] == '1':
+        n.append('0')
+        txt2+='0'
+    else:
+        n.append('1')
+        txt2+='1'
+    gg+=1
+print(txt2)
+itog = int(txt2,2)
+print(chr(itog))
+
+
+
+
+

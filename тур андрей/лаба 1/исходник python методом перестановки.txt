@@ -1,0 +1,42 @@
+# key 8x8
+a = list(input())
+b = []
+c = []
+i = int()
+
+
+while len(a)<64:
+    a.append(' ')
+
+while i<8:
+    b.append(a[i])
+    b.append(a[i+8])
+    b.append(a[i+16])
+    b.append(a[i+24])
+    b.append(a[i+32])
+    b.append(a[i+40])
+    b.append(a[i+48])
+    b.append(a[i+56])
+
+    
+    i+=1
+
+print(b)
+
+#дешифровка
+
+i = int()
+while i<8:
+    c.append(b[i])
+    c.append(b[i+8])
+    c.append(b[i+16])
+    c.append(b[i+24])
+    c.append(b[i+32])
+    c.append(b[i+40])
+    c.append(b[i+48])
+    c.append(b[i+56])
+
+    
+    i+=1
+
+print(c)
